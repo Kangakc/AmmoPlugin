@@ -1,23 +1,12 @@
 ﻿using Rocket.Core.Logging;
 using Rocket.Core.Plugins;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace AmmoPlugin
+namespace AmmoPlugin;
+
+public class MainPlugin : RocketPlugin
 {
-    public class MainPlugin : RocketPlugin
+    protected override void Load()
     {
-        protected override void Load()
-        {
-            Logger.Log("fortnitesyndrome");
-            base.Load();
-
-        }
+        Logger.Log("Loading AmmoPlugin Made By: Kangakc");
     }
-
-
 }
-
